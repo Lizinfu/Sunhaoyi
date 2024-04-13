@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/SHY/Desktop/SunHaoyi/build",
+  "command": "D:\\Dev-Cpp\\MinGW64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\algebra.obj -c C:\\Users\\SHY\\Desktop\\SunHaoyi\\src\\algebra.c",
+  "file": "C:/Users/SHY/Desktop/SunHaoyi/src/algebra.c",
+  "output": "CMakeFiles/main.dir/src/algebra.obj"
+},
+{
+  "directory": "C:/Users/SHY/Desktop/SunHaoyi/build",
+  "command": "D:\\Dev-Cpp\\MinGW64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\main.obj -c C:\\Users\\SHY\\Desktop\\SunHaoyi\\src\\main.c",
+  "file": "C:/Users/SHY/Desktop/SunHaoyi/src/main.c",
+  "output": "CMakeFiles/main.dir/src/main.obj"
+}
+]
