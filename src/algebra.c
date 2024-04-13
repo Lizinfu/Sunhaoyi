@@ -20,6 +20,8 @@ Matrix add_matrix(Matrix a, Matrix b)
     	    }
         }
         return m;
+    }else{
+        printf("Error: Matrix a and b must have the same rows and cols.");
     }
     return create_matrix(0, 0);
 }
@@ -35,6 +37,8 @@ Matrix sub_matrix(Matrix a, Matrix b)
     	    }
         }
         return m;
+    }else{
+        printf("Error: Matrix a and b must have the same rows and cols.");
     }
     return create_matrix(0, 0);
 }
@@ -57,6 +61,8 @@ Matrix mul_matrix(Matrix a, Matrix b)
             }
         }
         return m;
+    }else{
+        printf("Error: The number of cols of matrix a must be equal to the number of rows of matrix b.");
     }
     return create_matrix(0, 0);
 }
@@ -111,6 +117,8 @@ double det_matrix(Matrix a)
             }
             return det;
         }
+    }else{
+        printf("Error: The matrix must be a square matrix.");
     }
     return 0;
 }
@@ -150,6 +158,10 @@ Matrix inv_matrix(Matrix a)
     }else{
     	return a;
 	}
+    }else if(a.rows!=a.cols&&det_matrix(a)!=0){
+        printf("Error: The matrix must be a square matrix.");
+    }else{
+        printf("Error: The matrix is singular.");
     }
     return create_matrix(0, 0);
 }
@@ -197,6 +209,8 @@ double trace_matrix(Matrix a)
             tra=tra+a.data[i][i];
         }
         return tra;
+    }else{
+        printf("Error: The matrix must be a square matrix.");
     }
     return 0;
 }
