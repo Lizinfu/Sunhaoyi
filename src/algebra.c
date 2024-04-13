@@ -47,9 +47,9 @@ Matrix mul_matrix(Matrix a, Matrix b)
 {
     int i,j,r;
     if(a.cols==b.rows){
-        Matrix m = create_matrix(a.cols, a.rows);
+        Matrix m = create_matrix(a.cols, b.cols);
         for (j = 0; j < a.rows; j++){
-            for(i = 0;i < a.cols; i++){
+            for(i = 0;i < b.cols; i++){
                 m.data[i][j]=0;
             }
         }
@@ -158,9 +158,9 @@ Matrix inv_matrix(Matrix a)
     }else{
     	return a;
 	}
-    }else if(a.rows!=a.cols&&det_matrix(a)!=0){
+    }else if(a.rows!=a.cols||det_matrix(a)!=0){
         printf("Error: The matrix must be a square matrix.");
-    }else{
+    }else if(det_matrix(a)==0){
         printf("Error: The matrix is singular.");
     }
     return create_matrix(0, 0);
