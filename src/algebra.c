@@ -158,13 +158,13 @@ Matrix inv_matrix(Matrix a)
     }else{
     	return a;
 	}
-    }else if(a.rows!=a.cols||det_matrix(a)!=0){
-        printf("Error: The matrix must be a square matrix.");
-	return create_matrix(0, 0);
-    }else if(det_matrix(a)==0){
+    }else if(a.rows==a.cols&&det_matrix(a)==0){
         printf("Error: The matrix is singular.");
+	return create_matrix(0, 0);
+    }else if(a.rows!=a.cols){
+        printf("Error: The matrix must be a square matrix.");
+        return create_matrix(0, 0);
     }
-    return create_matrix(0, 0);
 }
 
 int rank_matrix(Matrix a)

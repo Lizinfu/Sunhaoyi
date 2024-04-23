@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/SHY/Desktop/SunHaoyi
+# Install script for directory: C:/Users/SHY/Desktop/Sunhaoyi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/SHY/Desktop/SunHaoyi/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/SHY/Desktop/Sunhaoyi/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

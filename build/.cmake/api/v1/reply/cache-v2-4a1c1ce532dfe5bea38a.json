@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/SHY/Desktop/SunHaoyi/build"
+			"value" : "c:/Users/SHY/Desktop/Sunhaoyi/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -599,7 +599,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/SHY/Desktop/SunHaoyi/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/SHY/Desktop/Sunhaoyi/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -1343,7 +1343,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/SHY/Desktop/SunHaoyi/build"
+			"value" : "C:/Users/SHY/Desktop/Sunhaoyi/build"
 		},
 		{
 			"name" : "main_IS_TOP_LEVEL",
@@ -1367,7 +1367,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/SHY/Desktop/SunHaoyi"
+			"value" : "C:/Users/SHY/Desktop/Sunhaoyi"
 		}
 	],
 	"kind" : "cache",
