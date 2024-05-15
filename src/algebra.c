@@ -154,15 +154,12 @@ Matrix inv_matrix(Matrix a)
                 m.data[i][j]=((i+j)%2==0?1:-1)*det_matrix(n);
             }
         }
-        if(m.data[0]!=NULL){
-            return m;
-        }else{
-            printf("Error: The matrix must be a square matrix.");
-        }
-        return create_matrix(0, 0);
+        return m;
     }else{
     	return a;
 	}
+    }else if(a.cols!=a.rows){
+        printf("Error: The matrix must be a square matrix.");
     }else if(a.rows==a.cols&&det_matrix(a)==0){
         printf("Error: The matrix is singular.");
 	return create_matrix(0, 0);
